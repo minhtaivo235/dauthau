@@ -1,0 +1,15 @@
+@import "src/variable.scss";
+.container {
+  max-width: calc(100% - 280px);
+  width: 100%;
+  padding: 30px;
+  margin-left: 280px;
+}
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: $gray-color;
+  margin-bottom: 40px;
+}
