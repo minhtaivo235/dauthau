@@ -60,17 +60,39 @@
       justify-content: flex-start;
       flex-direction: column;
       width: 16%;
+      div {
+        position: relative;
+      }
       label {
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
       }
       input {
+        width: 100%;
         margin-top: 8px;
+        font-weight: 500;
         font-size: 13px;
         line-height: 16px;
         border-bottom: 1px solid #d8d8d8;
-        padding: 10px 0;
+        padding: 10px 20px 10px 0;
+        &::placeholder {
+          color: #D8D8D8;
+        }
+      }
+      button {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #d8d8d8;
+        background-color: #fff;
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #D8D8D8;
+        padding: 10px 8px 10px 0;
+        i {
+          color: #35455C;
+        }
       }
     }
   }

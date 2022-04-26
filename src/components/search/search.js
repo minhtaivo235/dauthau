@@ -10,28 +10,30 @@ const BlockFilter = () => {
           <input type="text" placeholder="Nhập mã đấu thầu"></input>
         </div>
         <div className="block-filter_item">
-          <label>Mã đấu thầu</label>
-          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+          <label>Mã HSMT</label>
+          <input type="text" placeholder="Nhập mã HSMT"></input>
         </div>
         <div className="block-filter_item">
-          <label>Mã đấu thầu</label>
-          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+          <label>Tên gói thầu</label>
+          <input type="text" placeholder="Nhập mã gói thầu"></input>
         </div>
         <div className="block-filter_item">
-          <label>Mã đấu thầu</label>
-          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+          <label>Thời gian đóng thầu</label>
+          <input type="text" placeholder="Từ ngày - Đến ngày"></input>
         </div>
         <div className="block-filter_item">
-          <label>Mã đấu thầu</label>
-          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+          <label>Trạng thái</label>
+          <button>
+            <span>Tất cả</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
         </div>
         <div className="block-filter_item">
-          <label>Mã đấu thầu</label>
-          <input type="text" placeholder="Nhập mã đấu thầu"></input>
-        </div>
-        <div className="block-filter_item">
-          <label>Mã đấu thầu</label>
-          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+          <label>Phương thức đấu thầu</label>
+          <button>
+            <span>Phương thức đấu thầu 1 GĐ</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
         </div>
       </div>
     </div>
