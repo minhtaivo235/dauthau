@@ -15,5 +15,133 @@
       line-height: 24px;
       color: $primary-color;
     }
+    &_paging {
+      display: flex;
+      align-items: center;
+      .pagination {
+        margin: 0%;
+        .page-item {
+          [disabled] {
+            color: #d7d7d7 !important;
+          }
+          &:first-child {
+            margin-right: 17px;
+            .page-link span:first-child {
+              font-size: 22px;
+            }
+          }
+          &:last-child {
+            margin-left: 9px;
+            .page-link span:first-child {
+              font-size: 22px;
+            }
+          }
+          .page-link {
+            border: unset;
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 150%;
+            border-radius: 7px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            padding: 6px 12px;
+            margin-right: 8px;
+            color: #28293D;
+          }
+          &.active .page-link {
+            color: #fff;
+          }
+        }
+      }
+
+      &-page {
+        display: flex;
+        align-items: center;
+        .dropdown {
+          background-color: #FAFAFC;
+
+        }
+        .dropdown-toggle {
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          &:focus {
+            box-shadow: none;
+          }
+          &::after {
+            margin-left: 14px;
+          }
+        }
+        & > span {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .table {
+    &>thead {
+      background-color: rgba(245, 245, 250, 0.4);
+      th {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        padding: 16px 0px 16px 68px;
+      }
+    }
+    &>tbody {
+      td {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 16px 0px 16px 68px;
+        position: relative;
+        div:first-child {
+          margin-bottom: 5px;
+        }
+        .label-link {
+          cursor: pointer;
+          font-weight: 700;
+          text-decoration: underline;
+          color: $primary-color;
+        }
+        .label-sub-text {
+          color: #979797;
+        }
+        .label-icon {
+          margin-top: 10px;
+          margin-right: 52px;
+        }
+        .label-status {
+          border-radius: 7px;
+          text-align: center;
+          padding: 4px 8px;
+          &-inprogess {
+            color: #35455C;
+            background: linear-gradient(0deg, #F2F4F6, #F2F4F6), #FFFFFF;
+          }
+          &-close {
+            color: #3F8CFF;
+            background: #EFF2FE;
+          }
+          &-open {
+            color: #F48015;
+            background: linear-gradient(0deg, rgba(249, 181, 158, 0.3), rgba(249, 181, 158, 0.3)), #FFFFFF;
+          }
+          &-success {
+            color: #05784F;
+            background: rgba(46, 212, 122, 0.1);
+          }
+        }
+      }
+    }
+    &>:not(:first-child) {
+      border-top: none;
+    }
+    &>:not(caption)>*>* {
+      border: none;
+    }
   }
 }

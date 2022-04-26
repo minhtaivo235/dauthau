@@ -1,5 +1,5 @@
 @import "src/variable.scss";
-.navbar {
+.navbar-left {
   max-width: 280px;
   width: 100%;
   height: 100%;
@@ -22,6 +22,7 @@
     font-weight: bold;
     color: $primary-color;
     margin-left: 10px;
+    margin-bottom: 0px;
   }
   .icon {
     position: absolute;
