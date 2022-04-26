@@ -89,7 +89,7 @@ const datasColumn = [
       subLabel: "Phương thức đóng thầu",
     },
     trangThai: {
-      label: "Nộp hồ sơ",
+      label: "Đóng thầu",
       type: "status",
       subLabel: "close",
     },
@@ -131,7 +131,7 @@ const datasColumn = [
       subLabel: "Phương thức đóng thầu",
     },
     trangThai: {
-      label: "Nộp hồ sơ",
+      label: "Mở thầu",
       type: "status",
       subLabel: "open",
     },
@@ -173,7 +173,7 @@ const datasColumn = [
       subLabel: "Phương thức đóng thầu",
     },
     trangThai: {
-      label: "Nộp hồ sơ",
+      label: "Hoàn thành",
       type: "status",
       subLabel: "success",
     },
