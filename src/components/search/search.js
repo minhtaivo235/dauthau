@@ -1,6 +1,43 @@
 import React from "react";
 import "./search.scss";
 
+const BlockFilter = () => {
+  return (
+    <div className="block-filter">
+      <div className="block-filter_list">
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+        <div className="block-filter_item">
+          <label>Mã đấu thầu</label>
+          <input type="text" placeholder="Nhập mã đấu thầu"></input>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const BtnFilter = () => {
   return (
     <div className="btn-filter">
@@ -55,6 +92,7 @@ const Search = () => {
     <div className="search">
       <InputSearch />
       <BtnFilter />
+      <BlockFilter />
     </div>
   );
 };

@@ -1,41 +1,78 @@
 @import "src/variable.scss";
 .search {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   margin-bottom: 24px;
-}
-.input-search {
-  display: flex;
-  align-items: center;
-  padding: 15px 36px;
-  background-color: #fff;
-  border-radius: 7px;
-  width: 100%;
-  margin-right: 16px;
-  &__text {
-    height: 16px;
+  .input-search {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 36px;
+    background-color: #fff;
+    border-radius: 7px;
     width: 100%;
-    margin-left: 18px;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 150%;
+    margin-right: 16px;
+    &__text {
+      height: 16px;
+      width: 100%;
+      margin-left: 18px;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 150%;
+    }
+  }
+  .btn-filter {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px ;
+    box-shadow: 0px 0px 10px #EEEEEE;
+    border-radius: 7px;
+    background-color: #fff;
+    span {
+      margin-left: 9px;
+      font-size: 16px;
+      line-height: 24px;
+      flex: none;
+      margin: 0px 6px;
+      color: $primary-color;
+    }
+  }
+  .block-filter {
+    width: 100%;
+    margin-top: 24px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 7px;
+    &_list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 64px;
+    }
+    &_item {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 16%;
+      label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      input {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 16px;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 10px 0;
+      }
+    }
   }
 }
 
-.btn-filter {
-  display: flex;
-  align-items: center;
-  padding: 12px 20px ;
-  box-shadow: 0px 0px 10px #EEEEEE;
-  border-radius: 7px;
-  background-color: #fff;
-  span {
-    margin-left: 9px;
-    font-size: 16px;
-    line-height: 24px;
-    flex: none;
-    margin: 0px 6px;
-    color: $primary-color;
-  }
-}

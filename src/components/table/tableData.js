@@ -1,5 +1,4 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
 import { v4 as uuidv4 } from "uuid";
 import "./table.scss";
 
@@ -200,7 +199,7 @@ const switchType = (type, status = null) => {
 
 const TableData = () => {
   return (
-    <Table>
+    <table className="table">
       <thead>
         <tr key={uuidv4()}>
           {rowTitle.map((item) => (
@@ -247,7 +246,7 @@ const TableData = () => {
           );
         })}
       </tbody>
-    </Table>
+    </table>
   );
 };
 
