@@ -1,5 +1,6 @@
 import React from "react";
 import History from "../components/history/history";
+import InfoPackage from "../components/infoPackage/infoPackage";
 import InformationDetail from "../components/informationDetail/informationDetail";
 import Layout from "../components/layout";
 import NotifyInvite from "../components/notifyInvite/notifyInvite";
@@ -12,6 +13,7 @@ const NopHoSo = () => {
         <div className="full-content ">
           <InformationDetail />
           <NotifyInvite />
+          <InfoPackage />
         </div>
         <div className="right-side">
           <History />

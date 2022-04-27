@@ -2,6 +2,7 @@ import React from "react";
 import Paging from "./paging";
 import "./table.scss";
 import TableData from "./tableData";
+import { rowTitle, datasColumn } from "./fakeData";
 
 const TableTop = () => {
   return (
@@ -18,7 +19,7 @@ const BlockTable = () => {
   return (
     <div className="block-table">
       <TableTop />
-      <TableData />
+      <TableData rowTitle={rowTitle} datasColumn={datasColumn} />
     </div>
   );
 };

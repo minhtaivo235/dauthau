@@ -147,16 +147,24 @@ const BenMoiThau = () => {
   );
 };
 
+const NotifyInviteContent = () => {
+  return (
+    <>
+      <BenMoiThau />
+      <ĐiaiemPhatHanh />
+      <ThongTinMoiThau />
+    </>
+  );
+};
+
 const NotifyInvite = () => {
   return (
-    <div className="notify-invite background-white pb-2 border-radius">
+    <div className="notify-invite background-white pb-2 border-radius mb-2">
       <div className="notify-invite_label">
         <LabelDropdown content={"Thông báo mời thầu"} />
       </div>
       <BreakLine />
-      <BenMoiThau />
-      <ĐiaiemPhatHanh />
-      <ThongTinMoiThau />
+      {/* <NotifyInviteContent /> */}
     </div>
   );
 };

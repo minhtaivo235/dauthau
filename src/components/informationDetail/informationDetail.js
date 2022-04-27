@@ -28,12 +28,12 @@ const InformationContent = () => {
 
 const InformationDetail = () => {
   return (
-    <div className="information-detail background-white pb-2 mb-3">
+    <div className="information-detail background-white pb-2 mb-2">
       <div className="information-detail_label">
         <LabelDropdown content={"Thông tin chi tiết"} />
       </div>
       <BreakLine />
-      <InformationContent />
+      {/* <InformationContent /> */}
     </div>
   );
 };
