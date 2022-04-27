@@ -13,7 +13,9 @@ const NopHoSo = () => {
           <InformationDetail />
           <NotifyInvite />
         </div>
-        <History />
+        <div className="right-side">
+          <History />
+        </div>
       </div>
     </Layout>
   );

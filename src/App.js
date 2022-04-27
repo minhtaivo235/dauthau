@@ -1,6 +1,6 @@
 import "./App.scss";
 import Master from "./views/master";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NopHoSo from "./views/nophoso";
 
 function App() {
