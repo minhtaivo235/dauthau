@@ -20,6 +20,7 @@ const BlockInput = ({
           type="text"
           placeholder={content}
           className="block-input_content-input"
+          disabled
         ></input>
         {/* {icon && <i class={icon}></i>} */}
         {icon && (

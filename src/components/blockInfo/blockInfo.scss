@@ -1,0 +1,12 @@
+.block-info {
+  padding: 0 18px 20px;
+  &_label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    margin-bottom: 18px;
+  }
+  &_content {
+    margin-left: 30px;
+  }
+}
