@@ -13,3 +13,37 @@
   color: $gray-color;
   margin-bottom: 40px;
 }
+.wrap-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
+}
+.full-content {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.background-white {
+  background-color: #fff;
+}
+.label-bold {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 150%;
+  color: #000000;
+}
+.d-flex {
+  display: flex;
+}
+.border-radius {
+  border-radius: 7px;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.w-30 {
+  width: 100%;
+  max-width: 30%;
+}

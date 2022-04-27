@@ -1,0 +1,25 @@
+.block-label {
+  &_label {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 12px;
+    &-require {
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 150%;
+      color: #DF0B0B;
+      margin-left: 12px;
+      display: inline-block;
+    }
+  }
+  &_content {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: #606060;
+    display: flex;
+    justify-content: space-between;
+  }
+}
