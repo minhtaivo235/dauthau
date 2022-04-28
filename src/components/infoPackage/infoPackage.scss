@@ -1,0 +1,17 @@
+.btn-attach {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFF2FE;
+  border-radius: 4px;
+  max-width: 114px;
+  margin-left: 20px;
+  padding: 10px;
+  column-gap: 12px;
+  span {
+    color: #3F8CFF;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+}
