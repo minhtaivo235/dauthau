@@ -7,6 +7,11 @@ const switchType = (type, status = null) => {
   if (type === "link") return "label-link";
   if (type === "text") return "label-text";
   if (type === "icon") return "label-icon";
+  if (type === "checkbox") {
+    if (status) return "label-checkbox active";
+    return "label-checkbox";
+  }
+
   if (type === "status") {
     if (status === "inprogess") return "label-status label-status-inprogess";
     if (status === "open") return "label-status label-status-open";

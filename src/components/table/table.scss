@@ -95,6 +95,7 @@
       font-size: 13px;
       line-height: 16px;
       padding: 16px 0px 16px 34px;
+      vertical-align: middle;
       div:first-child {
         margin-bottom: 5px;
       }
@@ -114,6 +115,16 @@
         }
         &-sub-text {
           color: #979797;
+        }
+        &-checkbox {
+          width: 16px;
+          height: 16px;
+          background-color: #1C1D21;
+          border: 1px solid #1C1D21;
+          text-align: center;
+          &.active {
+            background-color: #fff;
+          }
         }
         &-icon {
           margin-top: 10px;
