@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.scss";
-import user from "../../../assets/user.png";
 
 const Header = () => {
   return (
@@ -20,7 +19,7 @@ const Header = () => {
         />
       </svg>
       <div className="user">
-        <img src={user} className="user_img"></img>
+        <img src={"images/user.png"} className="user_img"></img>
         <div className="user_info">
           <div className="user_info-name">Vu Tuan</div>
           <div className="user_info-role">Admin</div>

@@ -1,12 +1,11 @@
 import React from "react";
-import logo from "../../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 
 const NavbarTop = () => {
   return (
     <div className="navbar-left-top">
-      <img src={logo} alt="logo"></img>
+      <img src={"images/logo.png"} alt="logo"></img>
       <h1 className="label">ePurchase</h1>
       <span className="icon">
         <svg

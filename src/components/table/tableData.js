@@ -1,6 +1,5 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import product from "../../assets/product.png";
 import "./table.scss";
 
 const switchType = (type, status = null) => {
@@ -36,7 +35,7 @@ const TableData = ({ rowTitle, datasColumn }) => {
                   <td key={uuidv4()}>
                     {val.type === "withImage" && (
                       <img
-                        src={product}
+                        src={val.src}
                         alt="product"
                         className="item-img"
                       ></img>

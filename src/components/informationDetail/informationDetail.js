@@ -33,7 +33,7 @@ const InformationDetail = () => {
         <LabelDropdown content={"Thông tin chi tiết"} />
       </div>
       <BreakLine />
-      {/* <InformationContent /> */}
+      <InformationContent />
     </div>
   );
 };

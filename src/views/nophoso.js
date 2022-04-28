@@ -1,4 +1,5 @@
 import React from "react";
+import EvaluationCriteria from "../components/evaluationCriteria/evaluationCriteria";
 import History from "../components/history/history";
 import InfoPackage from "../components/infoPackage/infoPackage";
 import InformationDetail from "../components/informationDetail/informationDetail";
@@ -14,6 +15,7 @@ const NopHoSo = () => {
           <InformationDetail />
           <NotifyInvite />
           <InfoPackage />
+          <EvaluationCriteria />
         </div>
         <div className="right-side">
           <History />

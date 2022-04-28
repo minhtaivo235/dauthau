@@ -27,7 +27,7 @@ const BtnAttach = () => {
 
 const InfoPackage = () => {
   return (
-    <div className="notify-invite background-white pb-2 border-radius">
+    <div className="notify-invite background-white pb-2 mb-2 border-radius">
       <div className="notify-invite_label">
         <LabelDropdown content={"Thông tin gói thầu"} />
       </div>

@@ -164,7 +164,7 @@ const NotifyInvite = () => {
         <LabelDropdown content={"Thông báo mời thầu"} />
       </div>
       <BreakLine />
-      {/* <NotifyInviteContent /> */}
+      <NotifyInviteContent />
     </div>
   );
 };
