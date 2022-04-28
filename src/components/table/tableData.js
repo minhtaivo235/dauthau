@@ -1,9 +1,10 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import product from "../../assets/product.png";
 import "./table.scss";
 
 const switchType = (type, status = null) => {
-  if (type === "default") return "label-default";
+  if (type === "withImage") return "label-with-image";
   if (type === "link") return "label-link";
   if (type === "text") return "label-text";
   if (type === "icon") return "label-icon";
@@ -13,7 +14,7 @@ const switchType = (type, status = null) => {
     if (status === "success") return "label-status label-status-success";
     if (status === "close") return "label-status label-status-close";
   }
-  return "";
+  return "label-default";
 };
 
 const TableData = ({ rowTitle, datasColumn }) => {
@@ -33,7 +34,16 @@ const TableData = ({ rowTitle, datasColumn }) => {
               {Object.entries(item).map(([key, val]) => {
                 return (
                   <td key={uuidv4()}>
-                    <div className={switchType(val.type, val.subLabel)}>
+                    {val.type === "withImage" && (
+                      <img
+                        src={product}
+                        alt="product"
+                        className="item-img"
+                      ></img>
+                    )}
+                    <div
+                      className={"label " + switchType(val.type, val.subLabel)}
+                    >
                       {val.label === "icon" ? (
                         <svg
                           width="16"
@@ -54,7 +64,7 @@ const TableData = ({ rowTitle, datasColumn }) => {
                       )}
                     </div>
                     {val.subLabel && val.type !== "status" ? (
-                      <div className="label-sub-text">{val.subLabel}</div>
+                      <div className="label label-sub-text">{val.subLabel}</div>
                     ) : (
                       ""
                     )}
