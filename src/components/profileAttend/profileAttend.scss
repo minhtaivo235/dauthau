@@ -1,0 +1,42 @@
+.profile-attend {
+  &_content {
+    margin-bottom: 16px;
+    &-title {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000;
+      margin-left: 30px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 6px;
+    }
+  }
+  .profile-other {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-left: 30px;
+    &_label {
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+      color: #000;
+    }
+    &_file {
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+      text-decoration-line: underline;
+      color: #1E88FA;
+      position: relative;
+      svg {
+        position: absolute;
+        top: -4px;
+        right: -16px;
+      }
+    }
+  }
+}
