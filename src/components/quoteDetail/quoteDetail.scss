@@ -1,0 +1,113 @@
+.quote-detail-label {
+  margin: 16px 24px;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: #35455C;
+}
+td {
+  color: #4F4F4F;
+  font-weight: 400;
+}
+.select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: unset;
+  font-size: 13px;
+  line-height: 16px;
+  i {
+    color: #35455C;
+  }
+}
+.sanpham {
+  &_label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #1C1D21;
+    margin-bottom: 2px;
+  }
+  &_id {
+    color: #3F8CFF;
+    text-decoration-line: underline;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  &_description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-width: 300px;
+    font-weight: normal;
+  }
+}
+.border-bottom {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+.dongia_unit, .thue_unit {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  .select {
+    width: 50%;
+  }
+}
+.text-bold {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #1C1D21;
+}
+.total {
+  padding: 16px 12px;
+  background: rgba(245, 245, 250, 0.4);
+  &_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1C1D21;
+    
+    .label {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .price {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      
+    }
+    input.price {
+      background: rgba(245, 245, 250, 0.4);
+      border-bottom: 1px solid #979797;
+      padding-bottom: 8px;
+      min-width: 202px;
+      &::placeholder {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: right;
+        color: #979797;
+      }
+    }
+    &.result {
+      .price, .label {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #3F8CFF;
+
+      }
+    }
+  }
+  &-group-btn {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
+    padding-right: 40px;
+  }
+}

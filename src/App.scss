@@ -69,9 +69,13 @@
 .mb-2 {
   margin-bottom: 12px;
 }
+.mt-2 {
+  margin-top: 12px;
+}
 .pb-2 {
   padding-bottom: 16px;
 }
+
 .footer-stepper {
   width: 100%;
   height: 100px;
@@ -146,6 +150,10 @@
     color: #FFFFFF;
     background: #3F8CFF;
   }
+  &.btn-large-danger {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FD0000 0%, #FE007A 100%);
+  }
 }
 
 .table {
@@ -170,9 +178,6 @@
       line-height: 16px;
       padding: 16px 0px 16px 34px;
       vertical-align: middle;
-      div:first-child {
-        margin-bottom: 5px;
-      }
       .item-img {
         float: left;
         margin-right: 12px;
@@ -181,6 +186,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         max-width: 300px;
+        padding: 2px;
         &-link {
           cursor: pointer;
           font-weight: 700;

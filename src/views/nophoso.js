@@ -6,6 +6,7 @@ import InformationDetail from "../components/informationDetail/informationDetail
 import Layout from "../components/layout";
 import NotifyInvite from "../components/notifyInvite/notifyInvite";
 import ProfileAttend from "../components/profileAttend/profileAttend";
+import QuoteDetail from "../components/quoteDetail/quoteDetail";
 
 const FooterStepperRight = () => {
   return (
@@ -118,6 +119,7 @@ const NopHoSo = () => {
           <History />
         </div>
       </div>
+      {/* <QuoteDetail /> */}
       <FooterStepper />
     </Layout>
   );
