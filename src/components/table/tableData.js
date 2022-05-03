@@ -21,7 +21,7 @@ const switchType = (type, status = null) => {
   return "label-default";
 };
 
-const TableData = ({ rowTitle, datasColumn }) => {
+const TableData = ({ rowTitle, datasColumn, children }) => {
   return (
     <table className="table">
       <thead>
@@ -31,54 +31,7 @@ const TableData = ({ rowTitle, datasColumn }) => {
           ))}
         </tr>
       </thead>
-      <tbody>
-        {datasColumn.map((item) => {
-          return (
-            <tr key={uuidv4()}>
-              {Object.entries(item).map(([key, val]) => {
-                return (
-                  <td key={uuidv4()}>
-                    {val.type === "withImage" && (
-                      <img
-                        src={val.src}
-                        alt="product"
-                        className="item-img"
-                      ></img>
-                    )}
-                    <div
-                      className={"label " + switchType(val.type, val.subLabel)}
-                    >
-                      {val.label === "icon" ? (
-                        <svg
-                          width="16"
-                          height="4"
-                          viewBox="0 0 16 4"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M2 0C3.10457 0 4 0.89543 4 2C4 3.10457 3.10457 4 2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0ZM10 2C10 0.89543 9.10457 0 8 0C6.89543 0 6 0.89543 6 2C6 3.10457 6.89543 4 8 4C9.10457 4 10 3.10457 10 2ZM14 0C15.1046 0 16 0.89543 16 2C16 3.10457 15.1046 4 14 4C12.8954 4 12 3.10457 12 2C12 0.89543 12.8954 0 14 0Z"
-                            fill="black"
-                          />
-                        </svg>
-                      ) : (
-                        val.label
-                      )}
-                    </div>
-                    {val.subLabel && val.type !== "status" ? (
-                      <div className="label label-sub-text">{val.subLabel}</div>
-                    ) : (
-                      ""
-                    )}
-                  </td>
-                );
-              })}
-            </tr>
-          );
-        })}
-      </tbody>
+      <tbody>{children}</tbody>
     </table>
   );
 };

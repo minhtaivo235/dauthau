@@ -3,7 +3,16 @@ import BreakLine from "../breakLine/breakLine";
 import LabelDropdown from "../labelDropdown/labelDropdown";
 import TableData from "../table/tableData";
 import { datasColumn, rowTitle } from "./fakeData";
+import { v4 as uuidv4 } from "uuid";
 import "./infoPackage.scss";
+
+const switchType = (type, status = null) => {
+  if (type === "withImage") return "label-with-image";
+  if (type === "link") return "label-link";
+  if (type === "text") return "label-text";
+
+  return "label-default";
+};
 
 const BtnAttach = () => {
   return (
@@ -21,6 +30,7 @@ const BtnAttach = () => {
         />
       </svg>
       <span>Đính kèm</span>
+      <p>10</p>
     </div>
   );
 };
@@ -32,7 +42,37 @@ const InfoPackage = () => {
         <LabelDropdown content={"Thông tin gói thầu"} />
       </div>
       <BreakLine />
-      <TableData rowTitle={rowTitle} datasColumn={datasColumn} />
+      <TableData rowTitle={rowTitle}>
+        {datasColumn.map((item) => {
+          return (
+            <tr key={uuidv4()}>
+              {Object.entries(item).map(([key, val]) => {
+                return (
+                  <td key={uuidv4()}>
+                    {val.type === "withImage" && (
+                      <img
+                        src={val.src}
+                        alt="product"
+                        className="item-img"
+                      ></img>
+                    )}
+                    <div
+                      className={"label " + switchType(val.type, val.subLabel)}
+                    >
+                      {val.label}
+                    </div>
+                    {val.subLabel && val.type !== "status" ? (
+                      <div className="label label-sub-text">{val.subLabel}</div>
+                    ) : (
+                      ""
+                    )}
+                  </td>
+                );
+              })}
+            </tr>
+          );
+        })}{" "}
+      </TableData>
       <BtnAttach />
     </div>
   );

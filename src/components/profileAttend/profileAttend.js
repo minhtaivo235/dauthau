@@ -3,6 +3,7 @@ import BreakLine from "../breakLine/breakLine";
 import LabelDropdown from "../labelDropdown/labelDropdown";
 import TableData from "../table/tableData";
 import { datasColumn, rowTitle } from "./fakeData";
+import { v4 as uuidv4 } from "uuid";
 import "./profileAttend.scss";
 
 const ProfileOther = () => {
@@ -27,6 +28,16 @@ const ProfileOther = () => {
       <button className="btn-large btn-large-primary">Upload file</button>
     </div>
   );
+};
+
+const switchType = (type, status = null) => {
+  if (type === "link") return "label-link";
+  if (type === "text") return "label-text";
+  if (type === "checkbox") {
+    if (status) return "label-checkbox active";
+    return "label-checkbox";
+  }
+  return "label-default";
 };
 
 const BlockLabel = ({
@@ -60,7 +71,25 @@ const BlockLabel = ({
           </button>
         )}
       </div>
-      <TableData rowTitle={rowData} datasColumn={columnData} />
+      <TableData rowTitle={rowData} datasColumn={columnData}>
+        {datasColumn.map((item) => {
+          return (
+            <tr key={uuidv4()}>
+              {Object.entries(item).map(([key, val]) => {
+                return (
+                  <td key={uuidv4()}>
+                    <div
+                      className={"label " + switchType(val.type, val.subLabel)}
+                    >
+                      {val.label}
+                    </div>
+                  </td>
+                );
+              })}
+            </tr>
+          );
+        })}
+      </TableData>
     </div>
   );
 };

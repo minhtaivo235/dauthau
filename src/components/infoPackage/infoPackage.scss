@@ -8,10 +8,23 @@
   margin-left: 32px;
   padding: 10px;
   column-gap: 12px;
+  position: relative;
   span {
     color: #3F8CFF;
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.8rem;
+  }
+  p {
+    position: absolute;
+    top: -14px;
+    right: -16px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
   }
 }

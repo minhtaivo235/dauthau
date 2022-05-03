@@ -2,6 +2,7 @@ import React from "react";
 import BreakLine from "../breakLine/breakLine";
 import LabelDropdown from "../labelDropdown/labelDropdown";
 import TableData from "../table/tableData";
+import { v4 as uuidv4 } from "uuid";
 import "./evaluationCriteria.scss";
 import {
   rowTitleExp,
@@ -14,7 +15,21 @@ const BlockContent = ({ title, rowTitle, datasColumn }) => {
   return (
     <div className="evaluation-criteria_content">
       <div className="evaluation-criteria_content-title">{title}</div>
-      <TableData rowTitle={rowTitle} datasColumn={datasColumn} />
+      <TableData rowTitle={rowTitle}>
+        {datasColumn.map((item) => {
+          return (
+            <tr key={uuidv4()}>
+              {Object.entries(item).map(([key, val]) => {
+                return (
+                  <td key={uuidv4()}>
+                    <div className="label label-text">{val.label}</div>
+                  </td>
+                );
+              })}
+            </tr>
+          );
+        })}{" "}
+      </TableData>
     </div>
   );
 };
